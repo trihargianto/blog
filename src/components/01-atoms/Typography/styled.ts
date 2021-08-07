@@ -5,9 +5,12 @@ import {
   FONT_WEIGHT,
   LINE_HEIGHT,
 } from "../../00-tokens/typography"
+import * as colors from "../../00-tokens/colors"
 import * as types from "./types"
 
 export const Text = styled.span<types.StyledSpanPropTypes>`
+  color: ${colors.NEUTRAL.N800};
+
   ${props => {
     const { size = "body2", isBold = false } = props
 
