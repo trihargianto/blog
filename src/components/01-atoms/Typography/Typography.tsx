@@ -7,7 +7,7 @@ const Typography = (props: types.TypographyPropTypes) => {
   const {
     tag = "span",
     size = "body2",
-    isBold = false,
+    weight = "normal",
     children = null,
     dangerouslySetInnerHTML = null,
   } = props
@@ -16,7 +16,7 @@ const Typography = (props: types.TypographyPropTypes) => {
     <styled.Text
       as={tag}
       size={size}
-      isBold={isBold}
+      weight={weight}
       dangerouslySetInnerHTML={dangerouslySetInnerHTML}
     >
       {children}

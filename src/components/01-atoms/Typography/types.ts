@@ -8,6 +8,8 @@ export type FontSizeTypes =
   | "body1"
   | "body2"
 
+export type FontWeightTypes = "normal" | "semibold" | "bold"
+
 export type HTMLTagTypes =
   | "span"
   | "div"
@@ -21,13 +23,13 @@ export type HTMLTagTypes =
 
 export type StyledSpanPropTypes = {
   size?: FontSizeTypes
-  isBold?: Boolean
+  weight?: FontWeightTypes
 }
 
 export type TypographyPropTypes = {
   children?: React.ReactNode
   size?: FontSizeTypes
-  isBold?: Boolean
+  weight?: FontWeightTypes
   tag?: HTMLTagTypes
   dangerouslySetInnerHTML?: {
     __html: string

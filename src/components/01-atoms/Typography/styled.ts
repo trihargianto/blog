@@ -8,11 +8,23 @@ import {
 import * as colors from "../../00-tokens/colors"
 import * as types from "./types"
 
+function getFontWeightInNumber(weight: types.FontWeightTypes) {
+  switch (weight) {
+    case "bold":
+      return FONT_WEIGHT.bold
+      break
+    case "semibold":
+      return FONT_WEIGHT.semibold
+      break
+    default:
+      return FONT_WEIGHT.normal
+  }
+}
+
 export const Text = styled.span<types.StyledSpanPropTypes>`
   ${props => {
-    const { size = "body2", isBold = false } = props
-
-    const fontWeight = isBold ? FONT_WEIGHT.bold : FONT_WEIGHT.normal
+    const { size = "body2", weight = "normal" } = props
+    const fontWeight = getFontWeightInNumber(weight)
 
     switch (size) {
       case "heading1":
