@@ -4,9 +4,12 @@ export interface ButtonPropTypes
   extends React.ComponentPropsWithoutRef<"button"> {
   children: React.ReactNode
   variant?: ButtonVariantTypes
+  isRounded?: boolean
   isActive?: boolean
 }
 
 export type StyledButtonPropTypes = {
-  isActive?: boolean
+  isActive: boolean
+  isRounded: boolean
+  variant: ButtonVariantTypes
 }
