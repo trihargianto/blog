@@ -12,7 +12,7 @@ const ArticleCard = (props: types.ArticleCardPropTypes) => {
     <styled.Article key={slug}>
       <header>
         <Link href={slug} variant="primary-ghost">
-          <Typography size="heading3" tag="h2" isBold>
+          <Typography size="heading3" tag="h2" weight="bold">
             {title}
           </Typography>
         </Link>
