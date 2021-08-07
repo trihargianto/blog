@@ -9,6 +9,7 @@ export const NEUTRAL = {
 
 export const BLUE = {
   B800: "#496BEF",
+  B700: "#5C7EFD",
   B500: "#8C9CE6",
   B100: "#D1DCE5",
 }
