@@ -17,6 +17,7 @@ export const FONT_SIZES_IN_REM_UNIT = {
 
 export const FONT_WEIGHT = {
   normal: 400,
+  semibold: 600,
   bold: 700,
 }
 
