@@ -25,8 +25,11 @@ export type StyledSpanPropTypes = {
 }
 
 export type TypographyPropTypes = {
-  children: React.ReactNode
+  children?: React.ReactNode
   size?: FontSizeTypes
   isBold?: Boolean
   tag?: HTMLTagTypes
+  dangerouslySetInnerHTML?: {
+    __html: string
+  }
 }
