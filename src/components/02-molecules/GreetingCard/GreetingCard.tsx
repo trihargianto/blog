@@ -1,6 +1,7 @@
 import React from "react"
 
 import profilePic from "../../../img/profile-pic.jpeg"
+import Image from "../../01-atoms/Image"
 import * as styled from "./styled"
 
 const GreetingCard = () => {
@@ -21,7 +22,12 @@ const GreetingCard = () => {
       </styled.LeftContent>
 
       <styled.RightContent>
-        <styled.ProfilePic src={profilePic} />
+        <Image
+          src={profilePic}
+          alt="Tri Hargianto"
+          ratio="1:1"
+          variant="rounded"
+        />
       </styled.RightContent>
     </styled.Wrapper>
   )
