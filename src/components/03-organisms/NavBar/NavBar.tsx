@@ -43,10 +43,15 @@ export default function Navbar({ location }) {
 
           <styled.ListWrapper>
             <styled.List>
-              <Button onClick={() => navigate("/")} isActive={isHomePageActive}>
+              <Button
+                variant="primary-ghost"
+                onClick={() => navigate("/")}
+                isActive={isHomePageActive}
+              >
                 Home
               </Button>
               <Button
+                variant="primary-ghost"
                 onClick={() => navigate("/about")}
                 isActive={isAboutPageActive}
               >
