@@ -7,8 +7,9 @@ import isMobile from "../../../utils/isMobile"
 import Button from "../../01-atoms/Button"
 import Icon from "../../01-atoms/Icon"
 import * as styled from "./styled"
+import * as types from "./types"
 
-export default function Navbar({ location }) {
+export default function Navbar({ location }: types.NavBarPropTypes) {
   const isHomePageActive = location.pathname === "/"
   const isAboutPageActive = location.pathname === "/about"
 
