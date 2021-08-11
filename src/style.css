@@ -98,13 +98,11 @@ footer {
   padding: var(--spacing-6) var(--spacing-0);
 }
 
-hr {
+/* hr {
   background: var(--bg-navbar);
   height: 1px;
   border: 0;
 }
-
-/* Heading */
 
 h1,
 h2,
@@ -168,8 +166,6 @@ h6 > a {
   color: inherit;
 }
 
-/* Prose */
-
 p {
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
@@ -197,10 +193,6 @@ ol li {
 li > p {
   margin-bottom: calc(var(--spacing-8) / 2);
 }
-
-/* li *:last-child {
-  margin-bottom: var(--spacing-0);
-} */
 
 li > ul {
   margin: calc(var(--spacing-5) / 2);
@@ -238,8 +230,6 @@ table thead tr th {
   border-bottom: 1px solid var(--color-accent);
 }
 
-/* Link */
-
 a {
   color: var(--color-primary);
 }
@@ -247,9 +237,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-}
-
-/* Custom classes */
+} 
 
 .global-wrapper {
   margin: var(--spacing-0) auto;
@@ -264,11 +252,6 @@ a:focus {
 .global-header {
   margin-bottom: var(--spacing-12);
 }
-
-/* .main-heading {
-  font-size: var(--fontSize-7);
-  margin: 0;
-} */
 
 .post-list-item {
   margin-bottom: var(--spacing-8);
@@ -336,7 +319,6 @@ a:focus {
   background: transparent;
 }
 
-/* Heading Markdown */
 .heading-markdown {
   top: auto !important;
 }
@@ -350,7 +332,7 @@ a:focus {
   padding-top: 70px;
   margin-top: -70px;
   display: inline-block;
-}
+} */
 
 /* Table of Contents */
 .table-of-contents {
