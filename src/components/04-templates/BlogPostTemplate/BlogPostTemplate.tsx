@@ -20,7 +20,7 @@ const CommentTitle = styledComponent.div`
   margin-bottom: var(--spacing-4);
 `
 
-const BlogPost = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({ data, pageContext, location }) => {
   useEffect(() => {
     const script = document.createElement("script")
 
@@ -162,4 +162,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default BlogPost
+export default BlogPostTemplate

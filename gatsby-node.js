@@ -77,7 +77,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       createPage({
         path: post.fields.slug,
         component: path.resolve(
-          `./src/components/04-templates/BlogPost/BlogPost.tsx`
+          `./src/components/04-templates/BlogPostTemplate/BlogPostTemplate.tsx`
         ),
         context: {
           slug: post.fields.slug,
