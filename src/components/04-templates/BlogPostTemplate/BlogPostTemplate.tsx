@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react"
 import { Link, graphql } from "gatsby"
 import styledComponent from "styled-components"
 
+import ArticleCredit from "../../02-molecules/ArticleCredit"
 import NavBar from "../../03-organisms/NavBar"
 import Footer from "../../03-organisms/Footer"
 import * as styled from "./styled"
@@ -9,7 +10,6 @@ import * as styled from "./styled"
 /**
  * LEGACY
  */
-import Bio from "../../bio"
 import SEO from "../../seo"
 import Share from "../../share"
 import ScrollToTop from "../../button-scroll-top"
@@ -84,7 +84,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           />
           <footer>
-            <Bio />
+            <ArticleCredit />
           </footer>
         </article>
 
